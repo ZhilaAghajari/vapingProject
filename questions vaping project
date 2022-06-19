@@ -1,0 +1,10 @@
+1. users won't have different groups anymore because the groups we currenly have are assigned after creating an account randomly...
+the groups should be assigned based on the server..
+
+
+
+
+
+1. create the conditions columns... 
+2. code the part specific to assignining conditions ..
+3. check whether the user data is stored...
