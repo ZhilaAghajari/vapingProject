@@ -22,6 +22,7 @@ const scriptSchema = new mongoose.Schema({
   AL:Number,
   RV:Number,
   SN:Number,
+  Normal:Number,
   condition1: Number,
   condition2: Number,
   condition3:Number,

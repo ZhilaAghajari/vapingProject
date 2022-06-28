@@ -518,6 +518,7 @@ exports.getScriptFeed = (req, res, next) => {
   var scriptRV = "";
   var scriptSN = "";
   var scriptZA = "";
+  var scriptNormal = "";
 
   scriptAL = req.query.AL;
   scriptRV = req.query.RV;
@@ -532,7 +533,8 @@ exports.getScriptFeed = (req, res, next) => {
       {"AL":scriptAL},
       {"RV":scriptRV},
       {"SN":scriptSN},
-      {"ZA":scriptZA}
+      {"ZA":scriptZA},
+      {"Normal":1}
       ]
 
     })

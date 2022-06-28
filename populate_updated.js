@@ -204,6 +204,7 @@ function createPostInstances() {
                 postdetail.AL = new_post.AL;
                 postdetail.RV = new_post.RV;
                 postdetail.SN = new_post.SN;
+                postdetail.Normal = new_post.Normal;
 
 
                 // postdetail.des_5_community_comments = new_post.des_5_community_comments;
@@ -554,9 +555,9 @@ async function loadDatabase() {
         // await promisify(dropCollections); //drop existing collecions before loading data
         // await promisify(createActorInstances);
         // await promisify(createNotificationInstances);
-        await promisify(createPostInstances);
+        // await promisify(createPostInstances);
         // await promisify(createPostRepliesInstances);
-        // await promisify(actorNotifyInstances);
+        await promisify(actorNotifyInstances);
     } catch (err) {
         console.log('Error occurred in Loading', err);
     }
